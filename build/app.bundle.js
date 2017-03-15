@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "77dc39507e166b58bebb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "37b63df549e6c18fbce0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -17341,7 +17341,7 @@ var Header = function (_React$Component) {
                 _react2.default.createElement(
                     'h2',
                     null,
-                    'Steven\'s Blog'
+                    'Steven\'s Home'
                 )
             );
         }
@@ -17444,11 +17444,7 @@ var About = function (_React$Component) {
     _createClass(About, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                'about'
-            );
+            return _react2.default.createElement('div', null);
         }
     }]);
 
@@ -17551,11 +17547,7 @@ var Home = function (_Component) {
             return _react2.default.createElement(
                 _PageLayout2.default,
                 null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    'hello world'
-                )
+                _react2.default.createElement('div', null)
             );
         }
     }]);
