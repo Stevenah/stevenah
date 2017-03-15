@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "37b63df549e6c18fbce0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bae7f73d24f4d72c4df5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -7833,7 +7833,7 @@ exports = module.exports = __webpack_require__(92)();
 
 
 // module
-exports.push([module.i, ".App {\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start; }\n\n.App-logo {\n  animation: App-logo-spin infinite 20s linear;\n  height: 80px; }\n\n.App-header {\n  background-color: #222;\n  height: 250px;\n  padding: 20px;\n  color: white; }\n\n.App-body {\n  flex: 1; }\n\n.App-footer {\n  background-color: #222;\n  height: 250px;\n  width: 100%;\n  padding: 20px;\n  color: white; }\n\n.App-intro {\n  font-size: large; }\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
+exports.push([module.i, ".App {\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  overflow: hidden; }\n\n.App-logo {\n  animation: App-logo-spin infinite 20s linear;\n  height: 80px; }\n\n.App-header {\n  background-color: #222;\n  height: 250px;\n  padding: 20px;\n  color: white; }\n\n.App-body {\n  flex: 1; }\n\n.App-footer {\n  background-color: #222;\n  height: 250px;\n  width: 100%;\n  padding: 20px;\n  color: white; }\n\n.App-intro {\n  font-size: large; }\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
 
 // exports
 
