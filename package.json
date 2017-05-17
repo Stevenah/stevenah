@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --env=development --progress --profile --colors",
+    "start-maint": "webpack-dev-server --env=maintenance --progress --profile --colors",
     "build-dev": "webpack --env=development",
     "build-prod": "webpack --env=production",
     "build-maint": "webpack --env=maintenance",

@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d32b3aa296671e763acb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "906f05bae9a2195cbc77"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -13413,11 +13413,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(
-  Router,
-  null,
-  _react2.default.createElement(_App2.default, null)
-), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
 /***/ }),
 /* 116 */
@@ -14360,6 +14356,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var style = {
+    padding: "1em"
+};
+
 var App = function (_Component) {
     _inherits(App, _Component);
 
@@ -14370,19 +14370,19 @@ var App = function (_Component) {
     }
 
     _createClass(App, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
+                "div",
+                { style: style },
                 _react2.default.createElement(
-                    'h1',
+                    "h1",
                     null,
-                    'stevenah.com'
+                    "stevenah.no"
                 ),
-                'This site is currently undergoing maintenance. ',
-                _react2.default.createElement('br', null),
-                'please come back later :)'
+                "This site is currently undergoing maintenance. ",
+                _react2.default.createElement("br", null),
+                "please come back later :)"
             );
         }
     }]);
