@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import 'style/Footer.scss';
 
 class Footer extends React.Component {
     render () {
         return(
-            <div className="App-footer">                
-            </div>
+            <footer>
+
+            </footer>
         );
     }
 }

@@ -1,15 +1,20 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes, Component } from 'react';
+import Navigation from 'components/app/Navigation';
+import 'style/Header.scss'
 import logo from 'res/logo.svg';
 
-class Header extends React.Component {
+class Header extends Component {
     render () {
         return (
-            <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h2>Steven's Home</h2>
-            </div>
+            <header className="header-bar">
+                <Navigation />
+            </header>
         );
     }
+}
+
+Header.propTypes = {
+
 }
 
 export default Header;

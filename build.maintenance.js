@@ -2,11 +2,11 @@ var webpack = require('webpack');
 var path = require('path');
 
 var ENVIRONMENT = {
-    'process.env.NODE_ENV': JSON.stringify('DEVELOPMENT'),
+    'process.env.NODE_ENV': JSON.stringify('MAINTENANCE'),
 }
 
 var BUILD_PATH = path.resolve(__dirname, 'build/');
-var APP_PATH = path.resolve(__dirname, 'src/');
+var APP_PATH = path.resolve(__dirname, 'maintenance/src/');
 
 var PORT = 8080;
 
@@ -15,7 +15,7 @@ var config = {
         'webpack-dev-server/client?http://0.0.0.0:8080',
         'webpack/hot/only-dev-server',
         'whatwg-fetch',
-        path.resolve(APP_PATH, 'js/index.js')
+        path.resolve(APP_PATH, 'index.js')
     ],
     output: {
         path: BUILD_PATH,
@@ -28,14 +28,6 @@ var config = {
             { test: /\.(eot|woff2|woff|ttf|svg)$/, loaders: ['url-loader'] },
             { test: /\.json$/, loader: 'json-loader' },
         ],
-    },
-    resolve: {
-        alias: {
-            components: path.resolve(__dirname, 'src/js/components'),
-            pages: path.resolve(__dirname, 'src/js/pages'),
-            style: path.resolve(__dirname, 'src/style'),
-            res: path.resolve(__dirname, 'src/res'),
-        },
     },
     devServer: {
         contentBase: __dirname,

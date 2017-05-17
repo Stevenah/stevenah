@@ -6,7 +6,8 @@ class LayerLayout extends Component {
         const { width, height } = this.props;
 
         return (
-            <div width={width} height={height}>
+            <div>
+                <Sidebar />
                 {this.props.children}
             </div>
         );
