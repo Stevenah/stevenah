@@ -7,7 +7,6 @@ class LayerLayout extends Component {
 
         return (
             <div>
-                <Sidebar />
                 {this.props.children}
             </div>
         );

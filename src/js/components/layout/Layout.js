@@ -7,10 +7,7 @@ class Layout extends Component {
     render() {
         return (
             <div>
-                <Header />
-                <Sidebar />
                 { this.props.children }
-                <Footer />
             </div>
         );
     }
