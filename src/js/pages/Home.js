@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import PageLayout from 'components/layout/PageLayout';
-import PhotoBox from 'components/misc/PhotoBox';
+import 'style/Home.scss';
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className = "page">
+                <div className="nav-bar">
+                    <div>hello</div>
+                    <div>world</div>
+                </div>
+
+
             </div>
         );
     }
