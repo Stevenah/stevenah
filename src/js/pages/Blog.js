@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import 'style/Blog.scss';
 
 class Blog extends React.Component {
