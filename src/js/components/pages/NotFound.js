@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+import Terminal from 'ui/Terminal';
+
+import 'styles/NotFound.scss';
+
 class NotFound extends Component {
     render() {
         return (
-            <div>
-                <h1>NOT FOUND</h1>
+            <div className="page-not-found">
+                <Terminal />
             </div>
         );
     }

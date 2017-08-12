@@ -31,14 +31,15 @@ var config = {
     },
     resolve: {
         alias: {
-            components: path.resolve(__dirname, 'src/js/components'),
-            pages: path.resolve(__dirname, 'src/js/pages'),
-            style: path.resolve(__dirname, 'src/style'),
-            res: path.resolve(__dirname, 'src/res'),
+            app: path.resolve(__dirname, 'src/js/components/app'),
+            ui: path.resolve(__dirname, 'src/js/components/ui'),
+            pages: path.resolve(__dirname, 'src/js/components/pages'),
+            styles: path.resolve(__dirname, 'src/scss'),
         },
     },
     devServer: {
         contentBase: __dirname,
+        historyApiFallback: true,
         port: PORT,
         inline: true,
         hot: true,

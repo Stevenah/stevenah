@@ -1,0 +1,55 @@
+@import 'colors';
+
+.page-home {
+    margin: 100px 70px;
+}
+
+.content-group {
+
+    margin-bottom: 25px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+    
+    div {
+        font-size: 25px;
+
+        a {
+            display: block;
+            margin: 5px 30px;
+        }
+    }
+}
+
+.resume {
+    display: inline-block;
+}
+
+#link-1 {
+    color: $color-1;
+}
+
+#link-2 {
+    color: $color-2;
+}
+
+#link-3 {
+    color: $color-8;
+}
+
+#link-4 {
+    color: $color-23;
+}
+
+#link-5 {
+    color: $color-24;
+}
+
+#link-6 {
+    color: $color-21;
+}
+
+#link-7 {
+    color: $color-22;
+}
