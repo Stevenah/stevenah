@@ -1,3 +1,2 @@
-# A Personal Website for Steven Hicks
-
-Will be used to host a blog, side projects, resume and other stuff.
+# Personal Website for Steven Hicks
+Here you will find the source files used to build stevenah.no, the personal website of Steven Hicks.

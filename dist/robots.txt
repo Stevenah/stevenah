@@ -1,0 +1,7 @@
+User-agent: * 
+    Disallow: /papers/*
+    Disallow: /bibtex/*
+    Sitemap: https://www.stevenah.no/
+    Sitemap: https://www.stevenah.no/index.html
+    Sitemap: https://www.stevenah.no/publications.html
+    Sitemap: https://www.stevenah.no/resume.pdf

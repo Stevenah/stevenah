@@ -1,0 +1,132 @@
+[
+    {
+        "year": "2019", 
+        "pubs": [
+            {
+                "name": "Machine Learning-Based Analysis of Sperm Videos and Participant Data for Male Fertility Prediction",
+                "authors": "Steven Hicks, Jorunn M. Andersen, Oliwia Witczak, Vajira Thambawita, Pål Halvorsen, Hugo L. Hammer, Trine B. Haugen, and Michael Riegler",
+                "venue": "Scientific Reports",
+                "pdf": "",
+                "bib": "",
+                "doi": "10.1038/s41598-019-53217-y"
+            },
+            {
+                "name": "Medico Multimedia Task at MediaEval 2019",
+                "authors": "Steven Hicks, Pål Halvorsen, Trine B Haugen, Jorunn Marie Andersen, Oliwia Witczak, Konstantin Pogorelov, Hugo Lewi Hammer, Duc-Tien Dang-Nguyen, Mathias Lux, and Michael Riegler",
+                "venue": "CEUR Workshop Proceedings - Multimedia Benchmark Workshop (MediaEval), Sophia Antipolis, France, October 2019",
+                "pdf": "Hicks_MediaEval_2019.pdf",
+                "bib": "Hicks_MediaEval_2019.bib",
+                "doi": ""
+            },
+            {
+                "name": "One-Dimensional Convolutional Neural Networks on Motor Activity Measurements in Detection of Depression",
+                "authors": "Joakim Ihle Frogner, Farzan Majeed Noori, Pål Halvorsen, Steven Hicks, Enrique Garcia-Ceja, Jim Torresen, and Michael Riegler",
+                "venue": "Proceedings of the International Workshop on Multimedia for Personal Health and Health Care (HealthMedia), Nice, France, October 2019",
+                "pdf": "Frogner_ACM_MM_2019.pdf",
+                "bib": "Frogner_ACM_MM_2019.bib",
+                "doi": "10.1145/3347444.3356238"
+            },
+            {
+                "name": "ACM Multimedia Biomedia 2019 Grand Challenge Overview",
+                "authors": "Steven Hicks, Michael Riegler, Pia Smedsrud, Trine B Haugen, Kristin Ranheim Randel, Konstantin Pogorelov, Håkon Kvale Stensland, Duc-Tien Dang-Nguyen, Mathias Lux, Andreas Petlund, Thomas de Lange, Peter Thelin Schmidt, and Pål Halvorsen",
+                "venue": "Proceedings of ACM international conference on Multimedia (ACM MM), Nice, France, October 2019",
+                "pdf": "",
+                "bib": "Hicks_ACM_MM_2019.bib",
+                "doi": "10.1145/3343031.3356058"
+            },
+            {
+                "name": "Semantic Analysis of Soccer News for Automatic Game Event Classification",
+                "authors": "Aanund Jupskas Nordskog, Pål Halvorsen, Steven Hicks, Håakon K. Stensland, Hugo L. Hammer, Dag Johansen, and Michael Riegler",
+                "venue": "Proceedings of the ACM International Workshop on Content-Based Multimedia Indexing (CBMI), Dublin, Ireland, September 2019",
+                "pdf": "",
+                "bib": "Nordskog_CBMI_2019.bib",
+                "doi": "10.1109/CBMI.2019.8877417"
+            },
+            {
+                "name": "Artificial Intelligence as a Tool in Predicting Sperm Motility and Morphology",
+                "authors": "Michael Riegler, Jorunn M. Andersen, Hugo L. Hammer, Steven Hicks, Oliwia Witczak, and Trine B. Haugen",
+                "venue": "ESHRE 2019",
+                "pdf": "",
+                "bib": "",
+                "doi": ""
+            },
+            {
+                "name": "Artificial Intelligence Predicts Sperm Motility from Sperm Fatty Acids",
+                "authors": "Oliwia Witczak, Jorunn M. Andersen, Steven Hicks, Hugo L. Hammer, Michael Riegler, and Trine B. Haugen",
+                "venue": "ESHRE 2019",
+                "pdf": "",
+                "bib": "",
+                "doi": ""
+            },
+            {
+                "name": "VISEM: A Multimodal Video Dataset of Human Spermatozoa",
+                "authors": "Trine B. Haugen, Steven Hicks, Jorunn M. Andersen, Oliwia Witczak, Hugo L. Hammer, Rune Borgli, Pål Halvorsen, and Michael Riegler",
+                "venue": "Proceedings of ACM Multimedia Systems (MMSYS), Amherst, Massachusetts, USA, June 2019",
+                "pdf": "",
+                "bib": "Haugen_ACM_MMSYS_2019.bib",
+                "doi": "10.1145/3304109.3325814"
+            },
+            {
+                "name": "Deep Learning for Automatic Generation of Endoscopy Reports",
+                "authors": "Steven Hicks, Pia Smedsrud, Michael Riegler, Thomas de Lange, Andreas Petlund, Sigrund L. Eskeland, Konsantin Pogorelov, Petter T. Schmidt, and Pål Halvorsen",
+                "venue": "Gastrointestinal Endoscopy, Volume 89, Issue 6, Supplement, June 2019, Page AB77",
+                "pdf": "",
+                "bib": "Hicks_DDW_2019.bib",
+                "doi": "10.1016/j.gie.2019.04.053"
+            },
+            {
+                "name": "Unsupervised Preprocessing to Improve Generalisation for Medical Image Classification",
+                "authors": "Mathias Kirkerød, Rune Borgli, Vajira Thambawita, Steven Hicks, Michael Alexander Riegler, and Pål Halvorsen",
+                "venue": "Proceedings of the IEEE International Symposium on Medical Information and Communication Technology (ISMICT), Oslo, Norway, May 2019",
+                "pdf": "",
+                "bib": "Kirkerod_ISMICT_2019.bib",
+                "doi": "10.1109/ISMICT.2019.8743979"
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "pubs": [
+            {
+                "name": "Medico Multimedia Task at MediaEval 2018",
+                "authors": "Konstantin Pogorelov, Michael Riegler, Pål Halvorsen, Steven Hicks, Kristin Ranheim Randel, Duc-Tien Dang-Nguyen, Mathias Lux, Olga Ostroukhova, and Thomas de Lange",
+                "venue": "CEUR Workshop Proceedings - Multimedia Benchmark Workshop (MediaEval), Sophia Antipolis, France, October 2018",
+                "pdf": "Pogorelov_MediaEval_2018.pdf",
+                "bib": "Pogorelov_MediaEval_2018.bib",
+                "doi": ""
+            },
+            {
+                "name": "Mimir: an Automatic Reporting and Reasoning System for Deep Learning Based Analysis in the Medical Domain",
+                "authors": "Steven Hicks, Sigrun Eskeland, Mathias Lux, Thomas de Lange, Kristin R. Randel, Mattis Jeppsson, Konstantin Pogorelov, Pål Halvorsen, and Michael Riegler",
+                "venue": "Proceedings of ACM Multimedia Systems (MMSYS), Amsterdam, The Netherlands, June 2018s",
+                "pdf": "Hicks_MMSYS_2018.pdf",
+                "bib": "Hicks_MMSYS_2018.bib",
+                "doi": "10.1145/3204949.3208129"
+            },
+            {
+                "name": "Comprehensible Reasoning and Automated Reporting of Medical Examinations Based on Deep Learning Analysis",
+                "authors": "Steven Hicks, Sigrun Eskeland, Mathias Lux, Thomas de Lange, Kristin R. Randel, Mattis Jeppsson, Konstantin Pogorelov, Pål Halvorsen, and Michael Riegler",
+                "venue": "Proceedings of ACM Multimedia Systems (MMSYS), Amsterdam, The Netherlands, June 2018",
+                "pdf": "Hicks_MMSYS_2_2018.pdf",
+                "bib": "Hicks_MMSYS_2_2018.bib",
+                "doi": "10.1145/3204949.3208113"
+            },
+            {
+                "name": "Dissecting Deep Neural Networks for Better Medical Image Classification and Classification Understanding",
+                "authors": "Steven Hicks, Sigrun Eskeland, Mathias Lux, Thomas de Lange, Kristin R. Randel, Mattis Jeppsson, Konstantin Pogorelov, Pål Halvorsen, and Michael Riegler",
+                "venue": "Proceedings of International Symposium on Computer-Based Medical Systems (CBMS), Karlstad, Sweden, June 2018",
+                "pdf": "",
+                "bib": "Hicks_CBMS_2018.bib",
+                "doi": "10.1109/CBMS.2018.00070"
+            },
+            {
+                "name": "Deep Learning Based Disease Detection Using Domain Specific Transfer Learning",
+                "authors": "Steven Hicks, Pia Smedsrud, Pål Halvorsen, and Michael Riegler",
+                "venue": "CEUR Workshop Proceedings - Multimedia Benchmark Workshop (MediaEval), Sophia Antipolis, France, October 2018",
+                "pdf": "Hicks_MediaEval_2018.pdf",
+                "bib": "Hicks_MediaEval_2018.bib",
+                "doi": ""
+            }
+        ]
+    }
+]

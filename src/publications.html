@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="keywords" content="resume, research, publications, projects">
+    <meta name="Description" content="personal website of a Ph.D. student based in Oslo, Norway.">
+    <style>/* style */</style>
+    <title>Steven Hicks - Publications</title>
+</head>
+<body>
+    <header class="content">
+        <h1><a href="index.html">Steven Hicks</a></h1>
+        <nav>
+            <ul>
+                <li class="selected"><a href="publications.html">Publications</a></li>
+                <li><a target="_blank" href="/resume.pdf">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="content publication-list">
+        {% for publications in context %}
+        <li><div class="divider"><span>{{publications.year}}</span></div></li>
+        {% for publication in publications.pubs %}
+        <li>
+            <h2>{{publication.name}}</h2>
+            <div>{{publication.authors}}</div>
+            <div><i>{{publication.venue}}</i></div>
+            <ul>
+                {% if publication.pdf %}
+                <li><a href="/papers/{{publication.pdf}}">pdf</a></li>
+                {% endif %}
+                {% if publication.bib %}
+                <li><a href="/bibtex/{{publication.bib}}">cite</a></li>
+                {% endif %}
+                {% if publication.doi %}
+                <li><a href="https://doi.org/{{publication.doi}}">web</a></li>
+                {% endif %}
+            </ul>
+        </li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155284604-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155284604-1');
+    </script>
+</body>
+</html>
