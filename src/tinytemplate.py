@@ -1,6 +1,8 @@
 import os
 import inspect
 import re
+import argparse
+import json
 
 def do_dots(value, *dots):
     for dot in dots:
@@ -128,3 +130,27 @@ class TinyTemplate():
         globes = {}
         exec(str(self.template), globes)
         return globes["render_function"](self.context)
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description="Split data into k folds.")
+
+    parser.add_argument("-t", "--template", type=str)
+    parser.add_argument("-o", "--output", type=str)
+    parser.add_argument("-c", "--context", type=str, default=None)
+
+    args = parser.parse_args()
+
+    template = args.template
+    output = args.output
+    context = args.context
+
+    if context is not None:
+        with open(context) as f:
+            context = json.load(f)
+
+    with open(template) as f:
+        html = f.read()
+
+    with open(output, "w") as f:
+        f.write(TinyTemplate(html, {"context": context}).render())

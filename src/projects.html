@@ -13,28 +13,35 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>/* style */</style>
-    <title>Steven Hicks - About</title>
+    <title>Steven Hicks - Projects</title>
 </head>
 <body>
     <header class="content">
-        <h1><a href="/">Steven Hicks</a></h1>
+        <h1><a href="index.html">Steven Hicks</a></h1>
         <nav>
             <ul>
+                <li class="selected"><a href="projects.html">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a target="_blank" href="resume.pdf">Resume</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="content info">
-        Hi! My name is Steven Hicks. I'm a graduate student at SimulaMet doing research on explainable AI in health care.
-    </div>
-
-    <ul class="horizontal content social">
-        <li><a href="https://github.com/stevenah">GitHub</a></li>
-        <li><a href="https://www.researchgate.net/profile/Steven_Hicks7">ResearchGate</a></li>
-        <li><a href="https://twitter.com/stevenahicks">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/steven-hicks-1588a014b/">LinkedIn</a></li>
+    <ul class="content project-list">
+        {% for project in context %}
+        <li>
+            <img src="{{project.thumbnail}}"/>
+            <h2>{{project.name}}</h2>
+            <div>{{project.description}}</div>
+            <ul class="menu">
+                {% if project.play %}
+                <li><a href="{{project.play}}">play</a></li>
+                {% endif %}
+                {% if project.github %}
+                <li><a href="{{project.github}}">github</a></li>
+                {% endif %}
+            </ul>
+        </li>
+        {% endfor %}
     </ul>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155284604-1"></script>

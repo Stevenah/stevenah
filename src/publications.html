@@ -8,6 +8,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="keywords" content="resume, research, publications, projects">
     <meta name="Description" content="personal website of a Ph.D. student based in Oslo, Norway.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>/* style */</style>
     <title>Steven Hicks - Publications</title>
 </head>
@@ -21,7 +25,6 @@
             </ul>
         </nav>
     </header>
-
     <ul class="content publication-list">
         {% for publications in context %}
         <li><div class="divider"><span>{{publications.year}}</span></div></li>
@@ -30,7 +33,7 @@
             <h2>{{publication.name}}</h2>
             <div>{{publication.authors}}</div>
             <div><i>{{publication.venue}}</i></div>
-            <ul>
+            <ul class="menu">
                 {% if publication.pdf %}
                 <li><a href="/papers/{{publication.pdf}}">pdf</a></li>
                 {% endif %}
