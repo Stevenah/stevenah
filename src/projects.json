@@ -1,23 +1,23 @@
 [
     {
-        "name": "BioMedia Grand Challenge",
-        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
-        "description": "A yearly competition held at ACM Multimedia.",
+        "title": "BioMedia Grand Challenge",
+        "subtitle": "competition",
+        "description": "The Biomedia Grand Challenge focuses on the emerging field of medical multimedia where the task is to detect and classify both normal and abnormal findings in the gastrointestinal tract.",
         "play": "",
         "web": "",
         "github": "https://github.com/Stevenah/biomedia-2019"
     },
     {
-        "name": "MediaEval Medico",
-        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
-        "description": "A yearly competition on developing state-of-the-art multimedia systems for different  medical use-cases.",
+        "title": "MediaEval Medico",
+        "subtitle": "competition",
+        "description": "The 2019 MediaEval Medico task tackles the challenge of predicting semen quality using microscope videos of human sperm and associated participant data.",
         "play": "",
         "github": "",
         "web":  "http://multimediaeval.org/"
     },
     {
-        "name": "Stevenah.no (this website)",
-        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
+        "title": "Stevenah.no (this website)",
+        "subtitle": "competition",
         "description": "My personal website used to host my resume, projects, and publications.",
         "play": "",
         "web": "",

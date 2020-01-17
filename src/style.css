@@ -2,6 +2,7 @@
 	--bgcolor: rgb(36, 112, 243);
     --textcolor: rgb(255, 255, 255);
     --linkcolor: rgb(55, 71, 133);
+    --mobilewidth: 600
 }
 
 * {
@@ -116,12 +117,8 @@ ul.menu > li > a {
     font-weight: 900;
 }
 
-ul.project-list > li > ul > li {
-    display: inline-block;
-    background-color: var(--linkcolor);
-    padding: 0;
-    color: var(--textcolor);
-}
+
+
 
 ul.publication-list {
     padding-bottom: 10px;
@@ -148,31 +145,21 @@ ul.publication-list > li > h2 {
 
 ul.project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 0;
 }
 
+@media screen and (max-width: 600px) {
+    ul.project-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 ul.project-list > li {
-    width: 290px;
-    height: 340px;
     position: relative;
-    border: 4px solid var(--textcolor);
-    text-overflow: ellipsis;
-}
-
-ul.project-list > li > *:not(:first-child) {
-    padding: 0 10px;
-}
-
-ul.project-list > li > *:not(:first-child):not(:last-child) {
-    margin: 10px 0;
-}
-
-ul.project-list > li > img {
-	max-width: 290px;
-	width: 290px;
-    height: 170px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
 ul.project-list > li > h2 {
@@ -180,14 +167,20 @@ ul.project-list > li > h2 {
     font-weight: 600;
 }
 
-ul.project-list > li > div {
-    line-height: 1.2;
+ul.project-list > li > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -4px;
+    margin-bottom: 7px;
+    opacity: 0.7;
 }
 
-ul.project-list > li > ul {
-    position: absolute;
-    bottom: 10px;
+ul.project-list > li > .menu {
+    margin-top: 20px;
 }
+
+
+
 
 header {
     display: flex;

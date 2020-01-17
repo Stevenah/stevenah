@@ -29,8 +29,8 @@
     <ul class="content project-list">
         {% for project in context %}
         <li>
-            <img src="{{project.thumbnail}}"/>
-            <h2>{{project.name}}</h2>
+            <h2>{{project.title}}</h2>
+            <h3>{{project.subtitle}}</h3>
             <div>{{project.description}}</div>
             <ul class="menu">
                 {% if project.play %}
