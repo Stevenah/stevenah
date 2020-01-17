@@ -39,6 +39,9 @@
                 {% if project.github %}
                 <li><a href="{{project.github}}">github</a></li>
                 {% endif %}
+                {% if project.web %}
+                <li><a href="{{project.web}}">web</a></li>
+                {% endif %}
             </ul>
         </li>
         {% endfor %}

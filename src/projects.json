@@ -1,0 +1,26 @@
+[
+    {
+        "name": "BioMedia Grand Challenge",
+        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
+        "description": "A yearly competition held at ACM Multimedia.",
+        "play": "",
+        "web": "",
+        "github": "https://github.com/Stevenah/biomedia-2019"
+    },
+    {
+        "name": "MediaEval Medico",
+        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
+        "description": "A yearly competition on developing state-of-the-art multimedia systems for different  medical use-cases.",
+        "play": "",
+        "github": "",
+        "web":  "http://multimediaeval.org/"
+    },
+    {
+        "name": "Stevenah.no (this website)",
+        "thumbnail": "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
+        "description": "My personal website used to host my resume, projects, and publications.",
+        "play": "",
+        "web": "",
+        "github": "https://www.github.com/stevenah/stevenah"
+    }
+]
