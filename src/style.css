@@ -2,7 +2,6 @@
 	--bgcolor: rgb(36, 112, 243);
     --textcolor: rgb(255, 255, 255);
     --linkcolor: rgb(55, 71, 133);
-    --mobilewidth: 600
 }
 
 * {
@@ -66,6 +65,12 @@ div.info {
     text-align: center;
     max-width: 560px;
     font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+    div.info {
+        margin-top: 50px;
+    }
 }
 
 div.contact {
@@ -138,11 +143,6 @@ ul.publication-list > li > h2 {
     font-weight: 600;
 }
 
-
-
-
-
-
 ul.project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -178,9 +178,6 @@ ul.project-list > li > h3 {
 ul.project-list > li > .menu {
     margin-top: 20px;
 }
-
-
-
 
 header {
     display: flex;
@@ -220,8 +217,5 @@ header > nav > ul > li.selected a {
     }
     header > nav > ul > li.selected {
         margin-bottom: 18px;
-    }
-    .info {
-        margin-top: 50px;
     }
 }

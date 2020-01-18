@@ -1,7 +1,7 @@
 [
     {
         "title": "BioMedia Grand Challenge",
-        "subtitle": "competition",
+        "subtitle": "Competition",
         "description": "The Biomedia Grand Challenge focuses on the emerging field of medical multimedia where the task is to detect and classify both normal and abnormal findings in the gastrointestinal tract.",
         "play": "",
         "web": "",
@@ -9,7 +9,7 @@
     },
     {
         "title": "MediaEval Medico",
-        "subtitle": "competition",
+        "subtitle": "Competition",
         "description": "The 2019 MediaEval Medico task tackles the challenge of predicting semen quality using microscope videos of human sperm and associated participant data.",
         "play": "",
         "github": "",
@@ -17,7 +17,7 @@
     },
     {
         "title": "Stevenah.no (this website)",
-        "subtitle": "competition",
+        "subtitle": "Competition",
         "description": "My personal website used to host my resume, projects, and publications.",
         "play": "",
         "web": "",
