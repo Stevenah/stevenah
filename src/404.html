@@ -9,16 +9,16 @@
     <meta name="keywords" content="resume, research, publications, projects">
     <meta name="Description" content="personal website of a Ph.D. student based in Oslo, Norway.">
     <style>/* style */</style>
-    <title>Steven Hicks - About</title>
+    <title>Steven Hicks</title>
 </head>
 <body>
     <header class="content">
         <h1><a href="index.html">Steven Hicks</a></h1>
         <nav>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
                 <li class="selected"><a href="publications.html">Publications</a></li>
                 <li><a target="_blank" href="/resume.pdf">Resume</a></li>
+                <li><h2 id="theme-toggle">🌓</h2></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +26,36 @@
         <h2>404 - Page not found :(</h2>
         <div>Sorry, the page you are looking does not exist.</div>
     </div>
-
+    <script>
+        (function() {
+            var onpageLoad = localStorage.getItem("theme") || "dark-mode";
+            var element = document.documentElement;
+            element.classList.add(onpageLoad);
+        })();
+        function themeToggle() {
+            let element = document.documentElement;
+            if (element.classList.contains("dark-mode")) {
+                element.classList.remove("dark-mode");
+                element.classList.add("light-mode");
+            } else {
+                element.classList.remove("light-mode");
+                element.classList.add("dark-mode");
+            }
+            let theme = localStorage.getItem("theme");
+            if (theme && theme === "dark-mode") {
+                localStorage.setItem("theme", "light-mode");
+            } else {
+                localStorage.setItem("theme", "dark-mode");
+            }
+        }
+        document.getElementById("theme-toggle").addEventListener("click", themeToggle);
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155284604-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-155284604-1');
+    </script>
 </body>
 </html>

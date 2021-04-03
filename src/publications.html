@@ -13,43 +13,66 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>/* style */</style>
-    <title>Steven Hicks - Publications</title>
+    <title>Steven Hicks</title>
 </head>
 <body>
-    <header class="content">
+    <header>
         <h1><a href="index.html">Steven Hicks</a></h1>
         <nav>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li class="selected"><a href="publications.html">Publications</a></li>
-                <li><a target="_blank" href="/resume.pdf">Resume</a></li>
+                <li><a class="selected" href="publications.html">Publications</a></li>
+                <li><a target="_blank" href="resume.pdf">Resume</a></li>
+                <li><h2 id="theme-toggle">🌓</h2></li>
             </ul>
         </nav>
     </header>
-    <ul class="content publication-list">
+    <ul class="page-list">
         {% for publications in context %}
-        <li><div class="divider"><span>{{publications.year}}</span></div></li>
-        {% for publication in publications.pubs %}
-        <li>
-            <h2>{{publication.name}}</h2>
-            <div>{{publication.authors}}</div>
-            <div><i>{{publication.venue}}</i></div>
-            <ul class="menu">
-                {% if publication.pdf %}
-                <li><a href="/papers/{{publication.pdf}}">pdf</a></li>
-                {% endif %}
-                {% if publication.bib %}
-                <li><a href="/bibtex/{{publication.bib}}">cite</a></li>
-                {% endif %}
-                {% if publication.doi %}
-                <li><a href="https://doi.org/{{publication.doi}}">web</a></li>
-                {% endif %}
-            </ul>
-        </li>
-        {% endfor %}
+            <li><div class="page-list-divider"><span>{{publications.year}}</span></div></li>
+            {% for publication in publications.pubs %}
+            <li>
+                <h2>{{publication.name}}</h2>
+                <div>{{publication.authors}}</div>
+                <div><i>{{publication.venue}}</i></div>
+                <ul>
+                    {% if publication.pdf %}
+                    <li><a href="/papers/{{publication.pdf}}">pdf</a></li>
+                    {% endif %}
+                    {% if publication.bib %}
+                    <li><a href="/bibtex/{{publication.bib}}">cite</a></li>
+                    {% endif %}
+                    {% if publication.doi %}
+                    <li><a href="https://doi.org/{{publication.doi}}">web</a></li>
+                    {% endif %}
+                </ul>
+            </li>
+            {% endfor %}
         {% endfor %}
     </ul>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        (function() {
+            var onpageLoad = localStorage.getItem("theme") || "dark-mode";
+            var element = document.documentElement;
+            element.classList.add(onpageLoad);
+        })();
+        function themeToggle() {
+            let element = document.documentElement;
+            if (element.classList.contains("dark-mode")) {
+                element.classList.remove("dark-mode");
+                element.classList.add("light-mode");
+            } else {
+                element.classList.remove("light-mode");
+                element.classList.add("dark-mode");
+            }
+            let theme = localStorage.getItem("theme");
+            if (theme && theme === "dark-mode") {
+                localStorage.setItem("theme", "light-mode");
+            } else {
+                localStorage.setItem("theme", "dark-mode");
+            }
+        }
+        document.getElementById("theme-toggle").addEventListener("click", themeToggle);
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155284604-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];

@@ -1,4 +1,33 @@
-[
+[    
+    {
+        "year": "2020", 
+        "pubs": [
+            {
+                "name": "Toadstool: A Dataset for Training Emotional Intelligent Machines Playing Super Mario Bros",
+                "authors": "Henrik Svoren, Vajira Thambawita, Pål Halvorsen, Petter Jakobsen, Enrique Ceja, Farzan Majeed Noori, Hugo Hammer, Mathias Lux, Michael Riegler, and Steven Hicks",
+                "venue": "Scientific Reports",
+                "pdf": "Hicks_SciRep_2019.pdf",
+                "bib": "Hicks_SciRep_2019.bib",
+                "doi": "10.1038/s41598-019-53217-y"
+            },
+            {
+                "name": "Medico Multimedia Task at MediaEval 2019",
+                "authors": "Steven Hicks, Pål Halvorsen, Trine B Haugen, Jorunn Marie Andersen, Oliwia Witczak, Konstantin Pogorelov, Hugo Lewi Hammer, Duc-Tien Dang-Nguyen, Mathias Lux, and Michael Riegler",
+                "venue": "CEUR Workshop Proceedings - Multimedia Benchmark Workshop (MediaEval), Sophia Antipolis, France, October 2019",
+                "pdf": "Hicks_MediaEval_2019.pdf",
+                "bib": "Hicks_MediaEval_2019.bib",
+                "doi": ""
+            },
+            {
+                "name": "One-Dimensional Convolutional Neural Networks on Motor Activity Measurements in Detection of Depression",
+                "authors": "Joakim Ihle Frogner, Farzan Majeed Noori, Pål Halvorsen, Steven Hicks, Enrique Garcia-Ceja, Jim Torresen, and Michael Riegler",
+                "venue": "Proceedings of the International Workshop on Multimedia for Personal Health and Health Care (HealthMedia), Nice, France, October 2019",
+                "pdf": "Frogner_ACM_MM_2019.pdf",
+                "bib": "Frogner_ACM_MM_2019.bib",
+                "doi": "10.1145/3347444.3356238"
+            }
+        ]
+    },
     {
         "year": "2019", 
         "pubs": [

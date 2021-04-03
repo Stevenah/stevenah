@@ -7,40 +7,60 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="keywords" content="resume, research, publications, projects">
-    <meta name="Description" content="personal website of a Ph.D. student based in Oslo, Norway.">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <style>/* style */</style>
-    <title>Steven Hicks - About</title>
+    <title>Steven Hicks</title>
 </head>
 <body>
-    <header class="content">
-        <h1><a href="/">Steven Hicks</a></h1>
+    <header>
+        <h1><a href="index.html">Steven Hicks</a></h1>
         <nav>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a target="_blank" href="resume.pdf">Resume</a></li>
+                <li><h2 id="theme-toggle">🌓</h2></li>
             </ul>
         </nav>
     </header>
-
-    <div class="content info">
-        Hi! My name is Steven Hicks. I'm a graduate student at SimulaMet doing research on explainable AI in health care.
+    
+    <div>
+        <p>
+            I'm Steven. I'm currently finishing my PhD on using "intelligent" machines in medicine. On this website you'll find my latest research, the software I'm working on, and other things I find interesting.
+        </p>
+        <p>
+            Feel free to contact me at steven (at) simula.no. 
+        </p>
     </div>
 
-    <ul class="horizontal content social">
-        <li><a href="https://github.com/stevenah">GitHub</a></li>
-        <li><a href="https://www.researchgate.net/profile/Steven_Hicks7">ResearchGate</a></li>
-        <li><a href="https://twitter.com/stevenahicks">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/steven-hicks-1588a014b/">LinkedIn</a></li>
-    </ul>
-    <div class="content contact">
-        <a href="mailto:steven@simula.no">steven@simula.no</a>
-    </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <footer>
+        <ul class="horizontal content social">
+            <li><a href="https://github.com/stevenah">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=2fVVFSwAAAAJ&hl=en">Scholar</a></li>
+        </ul>
+    </footer>
+    <script>
+        (function() {
+            var onpageLoad = localStorage.getItem("theme") || "dark-mode";
+            var element = document.documentElement;
+            element.classList.add(onpageLoad);
+        })();
+        function themeToggle() {
+            let element = document.documentElement;
+            if (element.classList.contains("dark-mode")) {
+                element.classList.remove("dark-mode");
+                element.classList.add("light-mode");
+            } else {
+                element.classList.remove("light-mode");
+                element.classList.add("dark-mode");
+            }
+            let theme = localStorage.getItem("theme");
+            if (theme && theme === "dark-mode") {
+                localStorage.setItem("theme", "light-mode");
+            } else {
+                localStorage.setItem("theme", "dark-mode");
+            }
+        }
+        document.getElementById("theme-toggle").addEventListener("click", themeToggle);
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155284604-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];

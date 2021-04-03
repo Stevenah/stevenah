@@ -16,12 +16,15 @@ def do_dots(value, *dots):
 
 class PythonBuilder():
 
-    _indent_step = 4
-    _indent_level = 0
-
-    def __init__(self, indent_level=0):
+    def __init__(self, indent_level=0, indent_step=4):
         self._indent_level = indent_level
+        self._indent_step = indent_step
+
         self.code = []
+
+    def write(self, filepath):
+        with open( filepath, "w" ) as f:
+            f.write( str( self ) )
 
     def indent(self):
         self._indent_level += self._indent_step
@@ -34,7 +37,7 @@ class PythonBuilder():
 
     def add_fucntion(self, func):
         for line in inspect.getsource(func).split("\n"):
-            self.code.extend([" " * self._indent_level, line, "\n"])
+            self.code.extend( [ " " * self._indent_level, line, "\n" ] )
 
     def add_section(self):
         section = PythonBuilder(self._indent_level)
@@ -42,9 +45,9 @@ class PythonBuilder():
         return section
     
     def __str__(self):
-        return "".join(str(c) for c in self.code)
+        return "".join( str( c ) for c in self.code )
 
-class TinyTemplate():
+class Templater():
 
     variables = set()
     loop_variables = set()
@@ -57,7 +60,7 @@ class TinyTemplate():
         self.template = self.read_template(template)
         self.context = context
         
-    def handle_expression(self, expr):
+    def handle_expression(self, expr, add_variable=True):
 
         if "." in expr:
             dots = expr.split(".")
@@ -66,15 +69,16 @@ class TinyTemplate():
             code = "do_dots(%s, %s)" % (code, args)
 
         else:
-            self.variables.add(expr)
+            if add_variable:
+                self.variables.add(expr)
             code = "c_%s" % expr
 
         return code
 
     def read_template(self, text):
 
-        tokens = re.split(r"(?s)({{.*?}}|{%.*?%}|{#.*?#})", text)
-        python_builder = PythonBuilder()
+        tokens = re.split( r"(?s)({{.*?}}|{%.*?%}|{#.*?#})", text )
+
         code = PythonBuilder()
 
         code.add_line("def render_function(context):")
@@ -85,14 +89,15 @@ class TinyTemplate():
 
         for token in tokens:
 
-            if token.startswith("{#"):
+            if token.startswith( "{#" ):
                 continue
 
-            elif token.startswith("{{"):
+            elif token.startswith( "{{" ):
                 expr = self.handle_expression(token[ 2 : -2 ].strip())
                 code.add_line("result.append(str(%s))" % expr)
 
-            elif token.startswith("{%"):
+            elif token.startswith( "{%" ):
+                
                 words = token[ 2 : -2 ].strip().split()
                 operation = words[0]
 
@@ -125,7 +130,6 @@ class TinyTemplate():
 
         return code
 
-
     def render(self):
         globes = {}
         exec(str(self.template), globes)
@@ -153,4 +157,4 @@ if __name__ == "__main__":
         html = f.read()
 
     with open(output, "w") as f:
-        f.write(TinyTemplate(html, {"context": context}).render())
+        f.write(Templater(html, {"context": context}).render())
